@@ -1,2 +1,6 @@
 # timing-functions-js
-timing functions...in javascript
+
+setTimeout
+setInterval
+clearTimeout
+clearInterval
