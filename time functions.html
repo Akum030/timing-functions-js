@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>day7 </title>
+        <script type="text/javascript">
+        var id=0;
+        function fun1(){
+           
+            document.getElementById("h1").innerHTML=" 3 seconds have been passsed";
+
+        }
+        function sec(){
+            document.getElementById("h").innerHTML="now the text has been changed after 5 seconds";
+            document.getElementById("h1").style.visibility="hidden";
+        }
+        function fun2(){
+            id=window.setTimeout(fun1,3000);
+            window.setTimeout(sec,5000);
+        }
+        function stop(){
+            window.clearTimeout(id);
+        }
+</script>
+<body>
+
+             <h1>setTimeout and clearTimeout inbuilt functions</h1>
+             <h2>After 5 seconds text will change </h2>
+             <br><br>
+            <button onclick="fun2()" >start</button>
+            <br>
+            <h3 id="h">text will change </h3>
+            <h3 id="h1">wait...</h3>
+            <button onclick="stop()"> stop</button>
+      
+            <br>
+            <br>
+           <br> 
+
+  
+            </body>
+            <body>
+            <script type="text/javascript">
+            var id;
+            var second=1;
+            function change(){
+                document.getElementById("g1").innerHTML=second+" seconds";
+                second++;
+                
+            }
+            function textChange(){
+                document.getElementById("g").innerHTML="now the text has been changed after 10 seconds ";
+                window.clearTimeout(id);
+            }
+            function start(){
+                id=window.setInterval(change,1000);
+                window.setInterval(textChange,10000);
+            }
+            function stop(){
+                window.clearInterval(id);
+            }
+
+
+            </script>
+
+
+                <h1>setInterval and clearInterval inbuilt functions</h1>   
+                <h2>seconds keep on changing</h2>
+                <br><br>
+                <button onclick="start()">start</button>
+                <br>
+                <h3 id="g">text will change after 10 seconds</h3>
+                <h3 id="g1">wait...</h3>
+                <button onclick="stop()">stop</button>
+           
+            </body>
+        </head>
+</html>    
