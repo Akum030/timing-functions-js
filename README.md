@@ -1,6 +1,6 @@
 # timing-functions-js
 
-setTimeout
-setInterval
-clearTimeout
+setTimeout,
+setInterval,
+clearTimeout,
 clearInterval
